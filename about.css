@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif,'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.img1 { background-image: url("juhu photos/cookies.jpg"); }
+.img2 { background-image: url("juhu photos/lemoncurd tart.jpg"); }
+.img3 { background-image: url("juhu photos/potatocakeslice.jpg"); }
+.img4 { background-image: url("juhu photos/riceballs.jpg"); }
+.img5 { background-image: url("juhu photos/frenchtoast.jpg"); }
+.img6 { background-image: url("juhu photos/duriancake1.jpg"); }
+
+
+.bg-text {
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.6); 
+  color: white;
+  font-weight: bold;
+  font-size: 80px;
+  border: 10px solid #C0B283;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width:600px){
+}
+@media only screen and (max-device-width:1024px){
+}
+@media (max-width:320px){
+}
+@media (min-width:321px) and (max-width:768px){
+}
+@media (min-width:769px) and (max-width:1000px){
+}
+@media (min-width:1001px){
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  z-index: 2;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  z-index: 2;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+
+
+

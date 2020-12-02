@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>JUHU Bakery - Order Now</title>
+		<link href="oder_ccs.css" rel="stylesheet" type="text/css">
+	</head>
+		<body>
+		
+			<div id="myNav" class="overlay">
+				  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+				<div class="overlay-content">
+					<a href="JuHu-Home.html"> Home </a>
+		  			<a href="about-us.html"> About Us </a>
+		  			<a href="loc.html"> Location </a>
+		  			<a href="order.html"> Order Now </a>
+				</div>
+			</div>
+			
+			<div class="bg-image">
+					<div class="container">
+    					<div class="topnav">
+							<a href="JuHu-Home.html"> Home </a>
+							<a href="about-us.html"> About Us </a>
+							<a href="loc.html"> Location </a>
+							<a href="order.html"> Order Now </a>
+    					</div>
+  					</div>
+			</div>
+				<div class="bg-text">
+					<p style="float: left;"> <span style="font-size:50px;cursor:pointer" onclick="openNav()">&#9776; </span> </p>
+					<h2> <img src="JUHUBrand.png" style="width: 50%;"> </h2>
+					<h1 style="font-size:50px"> Order Now </h1>
+				<button class="button" id="myBtn"> Press to Order </button>
+			</div>
+				
+			<div id="myModal" class="modal">
+			
+				<div class="modal-content">
+					<div class="modal-header">
+					  <span class="close">&times;</span>
+					  <h2>Order number is JHFKE8FKEHF </h2>
+					</div>
+					<div class="modal-body">
+					  <p>Press on the button bellow to continue the purchase </p>
+					  <p> <form accept-charset="UTF-8" action="action_page.php" autocomplete="off" method="GET" target="_blank"><fieldset><legend>Order JHFKE8FKEHF</legend> <label for="name">Name</label><br /> <input name="name" type="text" value=" " /> <br /> <input checked="checked" name="sex" type="radio" value="male" /> Male <br /> <input name="sex" type="radio" value="female" /> Female <br /> <input name="sex" type="radio" value="unbinary" /> Unbinary <br /><textarea cols="30" rows="2">Email</textarea><br /><select>
+						<option selected="selected" value="1">Yes</option>
+						<option value="2">No</option>
+						</select><br /> <input name="democheckbox" type="checkbox" value="1" /> Confirm order <br /> <button type="submit" value="Submit">Submit</button></fieldset></form> </p>
+					</div>
+					<div class="modal-footer">
+						<h3> <a href="order.html"> <button class="button"> Continue </button> </a></h3>
+					</div>
+				  </div>
+				</div>
+			
+	<script>
+		function openNav() {
+		  document.getElementById("myNav").style.width = "100%";
+		}
+
+		function closeNav() {
+		  document.getElementById("myNav").style.width = "0%";
+		}
+		
+		var modal = document.getElementById("myModal");
+
+		var btn = document.getElementById("myBtn");
+
+		var span = document.getElementsByClassName("close")[0];
+
+		btn.onclick = function() {
+		  modal.style.display = "block";
+		}
+
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
+
+		window.onclick = function(event) {
+		  if (event.target == modal) {
+			modal.style.display = "none";
+		  }
+		}
+		
+		
+	</script>
+			
+	</body>
+</html>
